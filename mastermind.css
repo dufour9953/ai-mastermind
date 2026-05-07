@@ -316,15 +316,15 @@
   line-height: 1.45;
 }
 
-/* ===== WHO THIS IS FOR ===== */
+/* ===== QUALIFIER ===== */
 .mm-who {
-  padding: 6rem 2rem;
+  padding: 5rem 2rem;
   min-height: auto;
 }
 
 .mm-who-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .mm-who-header h2 {
@@ -332,96 +332,46 @@
   font-size: clamp(1.6rem, 3.5vw, 2.4rem);
   font-weight: 400;
   color: var(--text);
-  margin-bottom: .75rem;
 }
 
-.mm-who-header p {
-  font-size: .95rem;
-  color: var(--text-secondary);
-  font-weight: 300;
+.mm-qualifier-list {
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.mm-who-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  max-width: 780px;
-  margin: 0 auto 3rem;
-}
-
-.mm-who-card {
-  padding: 1.5rem;
-  border-radius: 14px;
+.mm-qualifier-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   transition: border-color .3s, box-shadow .3s;
 }
 
-.mm-who-card:hover {
+.mm-qualifier-item:hover {
   border-color: var(--border-hover);
   box-shadow: 0 4px 20px rgba(0, 0, 0, .04);
 }
 
-.mm-who-card .who-icon {
-  width: 32px;
-  height: 32px;
-  margin-bottom: .75rem;
+.mm-qualifier-item svg {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
   color: var(--accent-green);
+  margin-top: 2px;
 }
 
-.mm-who-card h3 {
-  font-size: .95rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: .35rem;
-}
-
-.mm-who-card p {
-  font-size: .84rem;
+.mm-qualifier-item p {
+  font-size: .9rem;
   font-weight: 300;
   color: var(--text-secondary);
   line-height: 1.6;
-}
-
-/* NOT FOR */
-.mm-not-for {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 1.75rem 2rem;
-  border-radius: 14px;
-  background: var(--bg-warm);
-  border: 1px solid var(--border);
-}
-
-.mm-not-for h3 {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--text);
-  margin-bottom: 1rem;
-}
-
-.mm-not-for ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mm-not-for li {
-  font-size: .88rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  padding: .4rem 0;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.mm-not-for li::before {
-  content: '✕';
-  position: absolute;
-  left: 0;
-  color: var(--accent-warm);
-  font-size: .75rem;
-  font-weight: 600;
+  margin: 0;
 }
 
 /* ===== PROOF ===== */
